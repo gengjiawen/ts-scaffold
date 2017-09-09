@@ -1,0 +1,11 @@
+{
+  "name": "type-script-scchaffold",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "typescript gen",
+  "scripts": {
+  },
+  "devDependencies": {
+    "vue-cli": "^2.8.1"
+  }
+}
