@@ -1,4 +1,4 @@
-A simple CLI for scaffolding typescript projects.
+A simple tool for scaffolding typescript projects.
 
 ### Prerequisite 
 
