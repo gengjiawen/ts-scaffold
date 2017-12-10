@@ -4,13 +4,17 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "scripts": {
-    "start": "nodemon --ext ts --exec ts-node index.ts"
+    "start": "nodemon --ext ts --exec ts-node index.ts",
+    "clean": "rimraf build",
+    "build": "npm run clean && tsc -p ./tsconfig.json"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "nodemon": "^1.12.1",
+    "@types/node": "^8.0.57",
+    "rimraf": "^2.6.2",
+    "nodemon": "^1.12.5",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.6.2"
   }
 }
