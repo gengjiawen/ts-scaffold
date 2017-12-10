@@ -7,6 +7,12 @@ Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm ver
 ``` bash
 $ npm install -g vue-cli
 ```
+### Feature
+* live reload with nodemon
+* build with easy
+
+### Todo
+* Add prettier
 
 ### Usage
 
