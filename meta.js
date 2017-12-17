@@ -1,20 +1,20 @@
 module.exports = {
-  "prompts": {
-    "name": {
+  prompts: {
+    name: {
       "type": "string",
       "required": true,
       "message": "Project name"
     },
-    "description": {
+    description: {
       "type": "string",
       "required": false,
       "message": "Project description",
       "default": "A typescript project"
     },
-    "author": {
+    author: {
       "type": "string",
       "message": "Author"
     },
   },
-  "completeMessage": "To get started:\n\n  Please look to README.md, have fun :) "
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run start"
 };
