@@ -10,9 +10,7 @@ $ npm install -g vue-cli
 ### Feature
 * live reload with nodemon
 * build with easy
-
-### Todo
-* Add prettier
+* prettier support
 
 ### Usage
 

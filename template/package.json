@@ -6,15 +6,17 @@
   "scripts": {
     "start": "nodemon --ext ts --exec ts-node index.ts",
     "clean": "rimraf build",
+    "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" \"*.ts\" --write",
     "build": "npm run clean && tsc -p ./tsconfig.json"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "@types/node": "^8.0.57",
+    "@types/node": "^8.5.1",
     "rimraf": "^2.6.2",
-    "nodemon": "^1.12.5",
-    "ts-node": "^3.3.0",
+    "nodemon": "^1.13.3",
+    "prettier": "^1.9.2",
+    "ts-node": "^4.0.2",
     "typescript": "^2.6.2"
   }
 }
