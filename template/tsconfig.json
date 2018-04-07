@@ -17,5 +17,11 @@
       "es2015",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "test",
+    "**/*.test.ts"
+  ]
 }
