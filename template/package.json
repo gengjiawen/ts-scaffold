@@ -7,7 +7,22 @@
     "start": "nodemon --ext ts --exec ts-node index.ts",
     "clean": "rimraf build",
     "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" \"*.ts\" --write",
+    "test": "jest",
     "build": "npm run clean && tsc -p ./tsconfig.json"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)",
+      "**/test/*.(ts|tsx|js)"
+    ]
   },
   "dependencies": {
   },
@@ -15,6 +30,8 @@
     "@types/node": "9.6.2",
     "rimraf": "2.6.2",
     "nodemon": "1.17.3",
+    "jest": "22.0.4",
+    "ts-jest": "22.0.1",
     "prettier": "1.11.1",
     "ts-node": "5.0.1",
     "typescript": "2.8.1"
