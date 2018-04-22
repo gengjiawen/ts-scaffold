@@ -17,9 +17,10 @@
       "js"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "^.+\\.tsx?$": "ts-jest"
     },
     "testMatch": [
+      "**/?(*.)(spec|test).(ts|tsx|js)",
       "**/__tests__/*.(ts|tsx|js)",
       "**/test/*.(ts|tsx|js)"
     ]
