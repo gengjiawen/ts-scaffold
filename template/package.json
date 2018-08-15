@@ -6,11 +6,12 @@
   "scripts": {
     "start": "nodemon --ext ts --exec ts-node index.ts",
     "clean": "rimraf build",
-    "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" \"*.ts\" --write",
+    "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" \"*.ts\" \"*.yml\" --write",
     "test": "jest",
     "build": "npm run clean && tsc -p ./tsconfig.json"
   },
   "jest": {
+    "testEnvironment": "node",
     "moduleFileExtensions": [
       "ts",
       "tsx",
