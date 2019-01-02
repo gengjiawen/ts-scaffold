@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+  ubuntu-test:
+    working_directory: ~/repo
+    docker:
+      - image: node:lts
+    steps:
+      - checkout
+      - run: bash test.sh
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test
