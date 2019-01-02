@@ -1,9 +1,7 @@
 A simple tool for scaffolding typescript projects.
+[![CircleCI](https://circleci.com/gh/gengjiawen/ts-scaffold.svg?style=svg)](https://circleci.com/gh/gengjiawen/ts-scaffold)
 
 ### Prerequisite 
-
-Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm version 3+ and [Git](https://git-scm.com/).
-
 ``` bash
 $ npm install -g @vue/cli-init
 ```
@@ -11,6 +9,7 @@ $ npm install -g @vue/cli-init
 * live reload with nodemon
 * build with easy
 * prettier support
+* git hooks for prettier task
 
 ### Usage
 
