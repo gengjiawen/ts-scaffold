@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  ubuntu-test:
+  test:
     working_directory: ~/repo
     docker:
       - image: node:lts
