@@ -7,6 +7,7 @@ jobs:
       - image: node:lts
     steps:
       - checkout
+      - run: npm i
       - run: bash test.sh
 
 workflows:
