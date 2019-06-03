@@ -4,7 +4,8 @@
   "description": "A typescript project",
   "author": "{{ author }}",
   "scripts": {
-    "start": "nodemon --ext ts --exec ts-node index.ts",
+    "start": "tsc -w",
+    "server": "nodemon --ext ts --exec ts-node libs/index.ts",
     "clean": "rimraf build",
     "prettify": "prettier \"{examples,lib,script,test}/**/*.ts\" \"*.ts\" \"*.yml\" --write",
     "test": "jest",
@@ -40,16 +41,16 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "10.12.18",
-    "@types/jest": "23.3.11",
-    "husky": "^1.3.1",
+    "@types/node": "12.0.4",
+    "@types/jest": "24.0.13",
+    "husky": "^2.3.0",
     "lint-staged": "^8.1.0",
-    "rimraf": "2.6.2",
-    "nodemon": "1.18.9",
-    "jest": "23.6.0",
-    "ts-jest": "23.10.5",
-    "prettier": "1.15.3",
-    "ts-node": "6.0.0",
-    "typescript": "3.2.2"
+    "rimraf": "2.6.3",
+    "nodemon": "1.19.1",
+    "jest": "24.8.0",
+    "ts-jest": "24.0.2",
+    "prettier": "1.17.1",
+    "ts-node": "8.2.0",
+    "typescript": "3.5.1"
   }
 }
