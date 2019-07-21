@@ -1,0 +1,28 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npx envinfo
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  tags:
+    - docker
+
+test:
+  stage: test
+  script:
+    - npm install
+    - npm test
+  tags:
+    - docker
