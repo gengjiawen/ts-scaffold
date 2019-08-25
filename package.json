@@ -1,11 +1,25 @@
 {
-  "name": "type-script-scchaffold",
-  "version": "1.0.0",
+  "name": "@gengjiawen/ts-scaffold",
+  "version": "0.0.0",
+  "description": "my top-notch SAO generator",
+  "repository": {
+    "url": "gengjiawen/ts-scaffold",
+    "type": "git"
+  },
+  "author": "gengjiawen <technicalcute@gmail.com> (github.com/gengjiawen)",
   "license": "MIT",
-  "description": "typescript gen",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
   "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^4.0.0"
   },
   "devDependencies": {
-    "@vue/cli-init": "3.2.0"
+    "ava": "^2.3.0",
+    "sao": "^1.6.1"
   }
 }
