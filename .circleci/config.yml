@@ -8,8 +8,10 @@ jobs:
     steps:
       - checkout
       - run: npx envinfo
-      - run: npm i
-      - run: bash test.sh
+      - run: yarn
+      - run:
+          name: test
+          command: yarn test
 
 workflows:
   version: 2
