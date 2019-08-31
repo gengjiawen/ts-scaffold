@@ -14,15 +14,15 @@ stages:
 build:
   stage: build
   script:
-    - npm install
-    - npm run build
+    - yarn install
+    - yarn run build
   tags:
     - docker
 
 test:
   stage: test
   script:
-    - npm install
-    - npm test
+    - yarn install
+    - yarn test
   tags:
     - docker
