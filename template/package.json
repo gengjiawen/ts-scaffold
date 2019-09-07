@@ -17,6 +17,9 @@
   },
   "dependencies": {
   },
+  "publishConfig": {
+    "access": "public"
+  }
   "devDependencies": {
     "@types/node": "12.7.4",
     "@types/jest": "24.0.18",
