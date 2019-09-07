@@ -18,15 +18,15 @@ const log = i => {
 
 test('e2e', async t => {
   const outDir = path.join(__dirname, '..', 'sample_out')
-  await execa(`npx sao ${generator} ${outDir} -y`, {
+  await execa.command(`npx sao ${generator} ${outDir} -y`, {
     cwd: path.join(__dirname, '..'),
   })
     .then(log)
-  await execa(`yarn`, {
+  await execa.command(`yarn`, {
     cwd: outDir,
   })
     .then(log)
-  await execa(`yarn test`, {
+  await execa.command(`yarn test`, {
     cwd: outDir,
   })
     .then(log)
