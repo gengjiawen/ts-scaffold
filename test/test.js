@@ -30,4 +30,5 @@ test('e2e', async t => {
     cwd: outDir,
   })
     .then(log)
+  t.pass('template e2e works')
 })
