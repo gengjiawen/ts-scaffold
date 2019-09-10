@@ -12,6 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,  
     "strict": true,
     "outDir": "./build",
     "lib": [
