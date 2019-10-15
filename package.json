@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "ava": "^2.4.0",
-    "execa": "^2.1.0",
+    "execa": "^3.0.0",
     "sao": "^1.7.0"
   }
 }
