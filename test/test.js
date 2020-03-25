@@ -29,6 +29,9 @@ test('e2e', async t => {
   await execa.command(`yarn test`, {
     cwd: outDir,
   })
+  await execa.command(`yarn format`, {
+    cwd: outDir,
+  })
     .then(log)
   t.pass('template e2e works')
 })
