@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "<%= description %>",
   "repository": {
     "url": "<%= username %>/<%= name %>",
@@ -11,8 +11,8 @@
     "start": "tsc -w",
     "server": "ts-node-dev --respawn libs/index.ts",
     "clean": "rimraf build",
-    "format": "prettier --write \"{examples,libs,script,test}/**/*.ts\" \"*.ts\" \"*.yml\"",
-    "format:check": "prettier --list-different \"{examples,libs,script,test}/**/*.ts\" \"*.ts\" \"*.yml\"",
+    "format": "prettier --write \"{examples,libs,script,test,bin}/**/*.{js,ts}\" \"*.yml\"",
+    "format:check": "prettier --list-different \"{examples,libs,script,test,bin}/**/*.{js,ts}\" \"*.yml\"",
     "test": "jest",
     "build": "npm run clean && tsc -p ./tsconfig.json"
   },
