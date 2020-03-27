@@ -22,7 +22,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "13.9.2",
+    "@types/node": "13.9.5",
     "@types/jest": "25.1.4",
     "husky": "^4.0.1",
     "lint-staged": "^10.0.8",
