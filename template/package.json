@@ -29,7 +29,7 @@
     "rimraf": "3.0.0",
     "jest": "25.2.6",
     "ts-node-dev": "1.0.0-pre.44",
-    "ts-jest": "25.2.1",
+    "ts-jest": "25.3.0",
     "prettier": "2.0.2",
     "typescript": "3.8.3"
   },
