@@ -28,7 +28,7 @@
     "lint-staged": "^10.0.8",
     "rimraf": "3.0.2",
     "jest": "26.0.1",
-    "ts-node-dev": "1.0.0-pre.44",
+    "ts-node-dev": "1.0.0-pre.48",
     "ts-jest": "26.1.0",
     "prettier": "2.0.5",
     "typescript": "3.9.5"
