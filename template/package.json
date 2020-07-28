@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "14.0.26",
-    "@types/jest": "26.0.3",
+    "@types/jest": "26.0.7",
     "husky": "^4.0.1",
     "lint-staged": "^10.0.8",
     "rimraf": "3.0.2",
