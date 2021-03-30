@@ -9,7 +9,7 @@
   "author": "<%= username %> <<%= email %>>",
   "scripts": {
     "start": "tsc -w",
-    "server": "ts-node-dev --respawn libs/index.ts",
+    "server": "nodemon --exec ts-node libs/index.js",
     "clean": "rimraf build",
     "format": "prettier --write \"{examples,libs,script,test,bin}/**/*.{js,ts}\" \"*.yml\"",
     "format:check": "prettier --list-different \"{examples,libs,script,test,bin}/**/*.{js,ts}\" \"*.yml\"",
@@ -26,6 +26,7 @@
     "@types/jest": "26.0.22",
     "husky": "6.0.0",
     "lint-staged": "^10.5.4",
+    "nodemon": "2.0.7",
     "rimraf": "3.0.2",
     "jest": "26.6.3",
     "ts-node-dev": "1.1.6",
