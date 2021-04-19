@@ -8,4 +8,4 @@ FROM gitpod/workspace-full:latest
 
 ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
 
-RUN brew install git fish sqlite3 curl cmake
+RUN brew update && brew install git fish sqlite3 curl
