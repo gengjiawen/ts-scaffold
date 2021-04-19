@@ -4,7 +4,7 @@ jobs:
   test:
     working_directory: ~/repo
     docker:
-      - image: gengjiawen/node-build
+      - image: gengjiawen/v8-build:arm64
     steps:
       - checkout
       - run: npx envinfo
