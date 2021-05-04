@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full:latest
+FROM gengjiawen/v8-build:arm64
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
@@ -6,6 +6,3 @@ FROM gitpod/workspace-full:latest
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
-
-RUN brew update && brew install git fish sqlite3 curl
