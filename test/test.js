@@ -5,6 +5,9 @@ import execa from 'execa'
 
 const generator = path.join(__dirname, '..')
 
+// snapshot can not update perfectly in CI env for ava
+console.log(process.env.CI)
+
 test('defaults', async t => {
   const stream = await sao.mock({ generator })
 
