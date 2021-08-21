@@ -6,6 +6,7 @@
     "url": "<%= username %>/<%= name %>",
     "type": "git"
   },
+  "main": "build/index.js",
   "author": "<%= username %> <<%= email %>>",
   "scripts": {
     "start": "tsc -w",
