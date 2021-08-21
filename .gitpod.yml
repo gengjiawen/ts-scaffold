@@ -2,4 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - init: echo "export CI=false" >> ~/.bashrc
   - init: yarn && yarn test
