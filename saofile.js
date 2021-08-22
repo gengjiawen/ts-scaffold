@@ -43,6 +43,7 @@ module.exports = {
   ],
   async completed() {
     this.gitInit()
+    this.npmInstall()
     this.showProjectTips()
   }
 }
