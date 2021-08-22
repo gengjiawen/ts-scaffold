@@ -6,7 +6,7 @@ updates:
     interval: monthly
     time: "21:00"
     timezone: Asia/Shanghai
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 4
 - package-ecosystem: npm
   directory: "/"
   schedule:
