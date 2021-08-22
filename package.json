@@ -1,7 +1,7 @@
 {
-  "name": "@gengjiawen/ts-scaffold",
+  "name": "sao-ts-scaffold",
   "version": "0.0.0",
-  "description": "my top-notch SAO generator",
+  "description": "my typescript SAO generator",
   "repository": {
     "url": "gengjiawen/ts-scaffold",
     "type": "git"
@@ -11,6 +11,14 @@
   "files": [
     "saofile.js",
     "template"
+  ],
+  "keywords": [
+    "sao-generator",
+    "sao",
+    "typescript",
+    "jest",
+    "easy-setup",
+    "scaffolding"
   ],
   "scripts": {
     "test": "ava"
