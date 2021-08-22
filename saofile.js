@@ -42,6 +42,7 @@ module.exports = {
     }
   ],
   async completed() {
+    this.gitInit()
     this.showProjectTips()
   }
 }
