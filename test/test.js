@@ -36,5 +36,14 @@ test('e2e', async t => {
     cwd: outDir,
   })
     .then(log)
+
+  await execa.command(`git add .`, {
+    cwd: outDir,
+  })
+    .then(log)
+  await execa.command(`git commit -m "test"`, {
+    cwd: outDir,
+  })
+    .then(log)
   t.pass('template e2e works')
 })

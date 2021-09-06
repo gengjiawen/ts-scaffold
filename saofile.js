@@ -47,7 +47,7 @@ module.exports = {
     execSync('npx husky-init', {
       cwd: this.outFolder
     })
-    execSync('npx husky add .husky/pre-commit "npm run format"', {
+    execSync('npx husky add .husky/pre-commit "npx lint-staged"', {
       cwd: this.outFolder
     })
 
