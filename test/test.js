@@ -2,6 +2,7 @@ import path from 'path'
 import test from 'ava'
 import sao from 'sao'
 import execa from 'execa'
+import fs from 'fs-extra'
 
 const generator = path.join(__dirname, '..')
 
@@ -21,6 +22,7 @@ const log = i => {
 
 test('e2e', async t => {
   const outDir = path.join(__dirname, '..', 'sample_out')
+  fs.emptyDirSync(outDir)
   await execa.command(`npx sao ${generator} ${outDir} -y`, {
     cwd: path.join(__dirname, '..'),
   })
