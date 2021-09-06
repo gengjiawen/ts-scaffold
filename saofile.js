@@ -1,4 +1,5 @@
 const superb = require('superb')
+const {execSync} = require('child_process')
 
 module.exports = {
   prompts() {
@@ -43,6 +44,13 @@ module.exports = {
   ],
   async completed() {
     this.gitInit()
+    execSync('npx husky-init', {
+      cwd: this.outFolder
+    })
+    execSync('npx husky add .husky/pre-commit "npm run format"', {
+      cwd: this.outFolder
+    })
+
     this.npmInstall()
     this.showProjectTips()
   }

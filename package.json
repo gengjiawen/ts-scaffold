@@ -21,7 +21,8 @@
     "scaffolding"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "prepare": "husky install"
   },
   "dependencies": {
     "superb": "^4.0.0"
@@ -29,6 +30,7 @@
   "devDependencies": {
     "ava": "^2.4.0",
     "execa": "^5.1.1",
-    "sao": "^1.7.0"
+    "sao": "^1.7.0",
+    "husky": "^7.0.0"
   }
 }
