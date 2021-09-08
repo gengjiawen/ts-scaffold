@@ -16,7 +16,8 @@
     "format": "prettier --write \"{examples,libs,script,bin}/**/*.{js,ts}\" \"*.yml\"",
     "format:check": "prettier --list-different \"{examples,libs,script,bin}/**/*.{js,ts}\" \"*.yml\"",
     "test": "jest",
-    "build": "npm run clean && tsc -p ./tsconfig.json"
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "postbuild": "cpy '**/*' '!**/*.ts' ../build/ --cwd=libs --parents"
   },
   "dependencies": {
   },
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@types/node": "16.7.10",
     "@types/jest": "27.0.1",
+    "cpy-cli": "^3.1.1",
     "husky": "7.0.2",
     "lint-staged": "^11.1.2",
     "nodemon": "2.0.12",
