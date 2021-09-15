@@ -5,3 +5,5 @@ FROM gitpod/workspace-full:latest
 # RUN brew install bastet
 #
 # More information: https://www.gitpod.io/docs/config-docker/
+
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
