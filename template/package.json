@@ -26,12 +26,12 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "16.9.4",
-    "@types/jest": "27.0.1",
+    "@types/node": "16.9.6",
+    "@types/jest": "27.0.2",
     "cpy-cli": "^3.1.1",
     "husky": "7.0.2",
     "lint-staged": "^11.1.2",
-    "nodemon": "2.0.12",
+    "nodemon": "2.0.13",
     "rimraf": "3.0.2",
     "jest": "27.2.1",
     "ts-jest": "27.0.5",
