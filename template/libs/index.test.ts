@@ -1,3 +1,5 @@
-it('add more test', async () => {
-  expect(1 + 1).toBe(2)
+test('add more test', async () => {
+  const a = 1
+  const b = 1
+  expect(a + b).toBe(2)
 })
