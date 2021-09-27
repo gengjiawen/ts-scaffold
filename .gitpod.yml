@@ -9,8 +9,4 @@ tasks:
 
 vscode:
   extensions:
-    - gengjiawen.npm-dependency-links
-    - gengjiawen.vscode-npm-dependency
-    - gengjiawen.vscode-postfix-ts
-    - gengjiawen.vscode-wakatime-gitpods
     - firsttris.vscode-jest-runner
