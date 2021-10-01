@@ -33,7 +33,7 @@
     "lint-staged": "^11.1.2",
     "nodemon": "2.0.13",
     "rimraf": "3.0.2",
-    "jest": "27.2.2",
+    "jest": "27.2.4",
     "ts-jest": "27.0.5",
     "ts-node": "^10.2.1",
     "prettier": "2.4.1",
