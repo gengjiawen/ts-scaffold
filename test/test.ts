@@ -1,25 +1,24 @@
-import path from 'path'
-import test from 'ava'
-import sao from 'sao'
-import execa from 'execa'
-import fs from 'fs-extra'
+import * as path from 'path'
+import * as execa from 'execa'
+import * as fs from 'fs-extra'
 
+const sao = require('sao')
 const generator = path.join(__dirname, '..')
 
 // snapshot can not update perfectly in CI env for ava
 console.log(process.env.CI)
 
-test('all files generated', async (t) => {
+test('all files generated', async () => {
   const stream = await sao.mock({ generator })
-  t.snapshot(stream.fileList, 'template files')
+  expect(stream.fileList).toMatchSnapshot()
 })
 
-const log = (i) => {
+const log = (i:any) => {
   console.log(i.stdout)
   console.log(i.stderr)
 }
 
-test('e2e', async (t) => {
+test('e2e', async () => {
   const outDir = path.join(__dirname, '..', 'sample_out')
   fs.emptyDirSync(outDir)
   await execa
@@ -55,5 +54,4 @@ test('e2e', async (t) => {
   } catch (error) {
     console.warn(error)
   }
-  t.pass('template e2e works')
 })

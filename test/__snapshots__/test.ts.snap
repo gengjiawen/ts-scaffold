@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`all files generated 1`] = `
+Array [
+  ".github/workflows/CI.yml",
+  ".gitignore",
+  ".gitlab-ci.yml",
+  ".gitpod.yml",
+  ".npmignore",
+  ".prettierignore",
+  ".prettierrc",
+  "LICENSE",
+  "README.md",
+  "libs/index.test.ts",
+  "libs/index.ts",
+  "package.json",
+  "tsconfig.json",
+]
+`;
