@@ -5,7 +5,6 @@ image:
 tasks:
   - init: echo "export CI=false" >> ~/.bashrc && source ~/.bashrc && yarn && yarn test
   - init: npm i -g npm-check-updates && exit
-  - command: fish
 
 vscode:
   extensions:

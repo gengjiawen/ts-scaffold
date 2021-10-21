@@ -9,6 +9,7 @@ Array [
   ".npmignore",
   ".prettierignore",
   ".prettierrc",
+  ".vscode/extensions.json",
   "LICENSE",
   "README.md",
   "libs/index.test.ts",
