@@ -6,16 +6,11 @@ updates:
     interval: monthly
     time: "21:00"
     timezone: Asia/Shanghai
-  open-pull-requests-limit: 4
+  open-pull-requests-limit: 6
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: weekly
-    day: friday
+    interval: monthly
     time: "21:00"
     timezone: Asia/Shanghai
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: ava
-    versions:
-    - ">= 3.a, < 4"
+  open-pull-requests-limit: 2
