@@ -3,14 +3,7 @@ A simple tool for scaffolding typescript projects.
 [![CircleCI](https://circleci.com/gh/gengjiawen/ts-scaffold.svg?style=svg)](https://circleci.com/gh/gengjiawen/ts-scaffold)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/gengjiawen/ts-scaffold)
 
-### Prerequisite 
-Install [SAO](https://github.com/saojs/sao) first.
-
-```bash
-yarn global add sao
-# or npm
-npm i -g sao
-```
+This project use [SAO](https://github.com/saojs/sao) internally.
 
 ### Features
 * live reload with nodemon
@@ -22,5 +15,5 @@ npm i -g sao
 ### Usage
 
 ``` bash
-$ sao gengjiawen/ts-scaffold <project-name>
+$ npx sao gengjiawen/ts-scaffold <project-name>
 ```
