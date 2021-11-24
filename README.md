@@ -15,5 +15,5 @@ This project use [SAO](https://github.com/saojs/sao) internally.
 ### Usage
 
 ``` bash
-$ npx sao gengjiawen/ts-scaffold <project-name>
+npx sao gengjiawen/ts-scaffold <project-name> -y -u
 ```
