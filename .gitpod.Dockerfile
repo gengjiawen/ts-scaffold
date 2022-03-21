@@ -9,4 +9,7 @@ FROM gitpod/workspace-full:latest
 # force gitpod docker image update
 ENV TRIGGER_REBUILD=3
 
+RUN brew install n && sudo /home/linuxbrew/.linuxbrew/bin/n latest && sudo /usr/local/bin/npm i -g yarn sao
+ENV PATH=/usr/local/bin/:$PATH
+
 ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
