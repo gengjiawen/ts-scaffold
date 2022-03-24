@@ -4,7 +4,7 @@ image:
 
 tasks:
   - init: echo "export CI=false" >> ~/.bashrc && source ~/.bashrc && yarn && yarn test
-  - init: sudo npm i -g npm-check-updates && exit
+  - init: sudo npm i -g npm-check-updates esvu && yes | esvu && exit
 
 vscode:
   extensions:
