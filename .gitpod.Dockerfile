@@ -17,4 +17,4 @@ ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
 # share env see https://github.com/gitpod-io/workspace-images/issues/472, `sudo su` to switch to root
 RUN echo "PATH="${PATH}"" | sudo tee /etc/environment
 
-sudo npm i -g npm-check-updates esvu && yes | esvu
+RUN sudo npm i -g npm-check-updates esvu && yes | esvu
