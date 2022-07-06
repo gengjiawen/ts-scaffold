@@ -6,7 +6,11 @@ import * as koaBody from 'koa-body'
 const app = new Koa()
 
 app.use(require('koa-compress')())
-app.use(koaBody())
+
+app.use(koaBody({
+    multipart: true,
+}))
+
 const router = new Router()
 
 router.get('/', async (ctx: Koa.Context) => {
