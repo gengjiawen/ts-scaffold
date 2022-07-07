@@ -1,9 +1,16 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/template"
-  schedule:
-    interval: monthly
-    time: "21:00"
-    timezone: Asia/Shanghai
-  open-pull-requests-limit: 8
+  - package-ecosystem: npm
+    directory: '/template'
+    schedule:
+      interval: monthly
+      time: '21:00'
+      timezone: Asia/Shanghai
+    open-pull-requests-limit: 8
+  - package-ecosystem: npm
+    directory: '/extensions/koa'
+    schedule:
+      interval: monthly
+      time: '21:00'
+      timezone: Asia/Shanghai
+    open-pull-requests-limit: 8
