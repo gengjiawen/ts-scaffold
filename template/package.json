@@ -29,7 +29,7 @@
     "@types/node": "18.6.3",
     "@types/jest": "28.1.4",
     "cpy-cli": "^4.0.0",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "lint-staged": "^13.0.0",
     "nodemon": "2.0.19",
     "rimraf": "3.0.2",
