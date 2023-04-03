@@ -17,3 +17,7 @@ This project use [SAO](https://github.com/saojs/sao) internally.
 ``` bash
 npx sao gengjiawen/ts-scaffold <project-name> -y -u
 ```
+
+### Node.js server scaffold
+
+https://github.com/gengjiawen/koa-scaffold
