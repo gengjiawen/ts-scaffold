@@ -51,7 +51,7 @@ module.exports = {
       cwd: this.outFolder,
     })
 
-    this.npmInstall()
+    // this.npmInstall()
     this.showProjectTips()
   },
 }
