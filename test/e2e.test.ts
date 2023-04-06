@@ -26,6 +26,9 @@ test('e2e', async () => {
       cwd: path.join(__dirname, '..'),
     })
     .then(log)
+  await execa.command(`npm i`, {
+    cwd: outDir,
+  })
   await execa.command(`yarn test`, {
     cwd: outDir,
   })
