@@ -44,10 +44,7 @@ module.exports = {
   ],
   async completed() {
     this.gitInit()
-    execSync('npx husky-init', {
-      cwd: this.outFolder,
-    })
-    execSync('npx husky add .husky/pre-commit "npx lint-staged"', {
+    execSync('npx husky init', {
       cwd: this.outFolder,
     })
 
