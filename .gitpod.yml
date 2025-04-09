@@ -1,7 +1,3 @@
-
-image:
-  file: .gitpod.Dockerfile
-
 tasks:
   - init: echo "export CI=false" >> ~/.bashrc && source ~/.bashrc && yarn && yarn test
   - init: brew install sqlite3 curl && exit
