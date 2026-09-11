@@ -16,6 +16,10 @@
     "emitDecoratorMetadata": true,  
     "strict": true,
     "outDir": "./build",
+    "rootDir": "./libs",
+    "types": [
+      "node"
+    ],
     "lib": [
       "es2020",
       "dom"

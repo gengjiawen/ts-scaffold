@@ -33,6 +33,11 @@ test('e2e', async () => {
     cwd: outDir,
   })
   await execa
+    .command(`yarn typecheck`, {
+      cwd: outDir,
+    })
+    .then(log)
+  await execa
     .command(`yarn format`, {
       cwd: outDir,
     })
