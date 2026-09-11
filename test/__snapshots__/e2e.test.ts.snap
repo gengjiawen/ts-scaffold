@@ -1,7 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`all files generated 1`] = `
-Array [
+[
   ".github/workflows/CI.yml",
   ".gitignore",
   ".gitlab-ci.yml",
@@ -16,5 +16,6 @@ Array [
   "libs/index.ts",
   "package.json",
   "tsconfig.json",
+  "tsconfig.test.json",
 ]
 `;

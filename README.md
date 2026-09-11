@@ -6,7 +6,7 @@ A simple tool for scaffolding typescript projects.
 This project use [SAO](https://github.com/saojs/sao) internally.
 
 ### Features
-* live reload with nodemon
+* live reload with tsx
 * build with easy
 * prettier support
 * add jest by default

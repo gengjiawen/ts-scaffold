@@ -1,10 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "declaration": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
     "removeComments": true,
     "noImplicitAny": true,
@@ -13,18 +11,24 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,  
+    "emitDecoratorMetadata": true,
     "strict": true,
-    "outDir": "./build",
+    "noEmit": true,
+    "types": [
+      "node",
+      "jest"
+    ],
     "lib": [
       "es2020",
       "dom"
     ]
   },
+  "include": [
+    "test/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "build",
-    "test",
-    "**/*.test.ts"
+    "sample_out"
   ]
 }
