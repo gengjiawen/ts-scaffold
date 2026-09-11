@@ -19,7 +19,7 @@
     "test": "jest",
     "typecheck": "tsc -p ./tsconfig.test.json",
     "build": "npm run clean && tsc -p ./tsconfig.json",
-    "postbuild": "cpy '**/*' '!**/*.ts' ../build/ --cwd=libs --parents"
+    "postbuild": "cpy \"**/*\" \"!**/*.ts\" ../build/ --cwd=libs || exit 0"
   },
   "dependencies": {
   },
