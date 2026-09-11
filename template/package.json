@@ -19,7 +19,7 @@
     "test": "jest",
     "typecheck": "tsc -p ./tsconfig.test.json",
     "build": "npm run clean && tsc -p ./tsconfig.json",
-    "postbuild": "cpy '**/*' '!**/*.ts' ../build/ --cwd=libs --parents"
+    "postbuild": "cpy \"**/*\" \"!**/*.ts\" ../build/ --cwd=libs || exit 0"
   },
   "dependencies": {
   },
@@ -31,7 +31,7 @@
     "@swc/jest": "^0.2.39",
     "@types/node": "26.1.0",
     "@types/jest": "30.0.0",
-    "cpy-cli": "^4.2.0",
+    "cpy-cli": "^7.0.0",
     "husky": "9.1.7",
     "lint-staged": "^17.0.8",
     "rimraf": "6.1.3",
